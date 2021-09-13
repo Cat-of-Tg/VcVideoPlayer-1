@@ -8,18 +8,18 @@ from pyrogram.errors import MessageNotModified
 async def start(client, message):
    buttons = [
             [
-                InlineKeyboardButton("Hᴇʟᴘ & Cᴏᴍᴍᴀɴᴅꜱ", callback_data="help"),
+                InlineKeyboardButton("Hᴇʟᴘ", callback_data="help"),
             ],
             [
-                InlineKeyboardButton("Sᴏᴜʀᴄᴇ", url=f"https://{SOURCE_CODE}"),
-                InlineKeyboardButton("Cʜᴀɴɴᴇʟ", url=f"https://t.me/{UPDATES_CHANNEL}"),
+                InlineKeyboardButton("UPSATES", url=f"https://t.me/Team_Lad"),
+                InlineKeyboardButton("SUPPORT", url=f"https://t.me/teamladz_bothub"),
             ],
             [
-                InlineKeyboardButton("Aʙᴏᴜᴛ", callback_data="about"),
-                InlineKeyboardButton("Dᴇᴠꜱ", callback_data="devs"),
+                InlineKeyboardButton("ABOUT", callback_data="about"),
+                InlineKeyboardButton("DEVS", url=f"https://t.me/cat_of_tg"),
             ],
             [
-               InlineKeyboardButton("Sᴜᴍᴍᴏɴ Mᴇ", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"),
+               InlineKeyboardButton("ADD ME TO YOUR GROUP", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"),
             ]
             ]
    reply_markup = InlineKeyboardMarkup(buttons)
@@ -36,8 +36,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
     if query.data=="help":
         buttons = [
             [
-                InlineKeyboardButton("Bᴀᴄᴋ", callback_data="start"),
-                InlineKeyboardButton ("Sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{SUPPORT_GROUP}"),
+                InlineKeyboardButton("BACK", callback_data="start"),
+                InlineKeyboardButton ("SUPPORT", url=f"https://t.me/teamladz_bothub"),
             ]
             ]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -52,8 +52,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data=="about":
         buttons = [
             [
-                InlineKeyboardButton("Bᴀᴄᴋ", callback_data="start"),
-                InlineKeyboardButton ("Sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{SUPPORT_GROUP}"),
+                InlineKeyboardButton("BACK", callback_data="start"),
+                InlineKeyboardButton ("SUPPORT", url=f"https://t.me/teamladz_bothub"),
             ]
             ]
         reply_markup = InlineKeyboardMarkup(buttons)
