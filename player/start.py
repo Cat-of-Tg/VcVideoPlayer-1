@@ -8,18 +8,17 @@ from pyrogram.errors import MessageNotModified
 async def start(client, message):
    buttons = [
             [
-                InlineKeyboardButton("Hᴇʟᴘ", callback_data="help"),
+                InlineKeyboardButton('ADD ME TO UR GROUP", url=f"https://t.me/{BOT_USERNAME}?startgroup=true),
             ],
             [
                 InlineKeyboardButton("UPSATES", url=f"https://t.me/Team_Lad"),
                 InlineKeyboardButton("SUPPORT", url=f"https://t.me/teamladz_bothub"),
             ],
             [
-                InlineKeyboardButton("ABOUT", callback_data="about"),
-                InlineKeyboardButton("DEVS", url=f"https://t.me/cat_of_tg"),
+                InlineKeyboardButton("DEV", url=f"https://t.me/cat_of_tg"),
             ],
             [
-               InlineKeyboardButton("ADD ME TO YOUR GROUP", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"),
+               InlineKeyboardButton("HELP & COMMANDS", callback_data="help"),
             ]
             ]
    reply_markup = InlineKeyboardMarkup(buttons)
@@ -98,15 +97,14 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 InlineKeyboardButton("Hᴇʟᴘ & Cᴏᴍᴍᴀɴᴅꜱ", callback_data="help"),
             ],
             [
-                InlineKeyboardButton("Sᴏᴜʀᴄᴇ", url=f"https://{SOURCE_CODE}"),
-                InlineKeyboardButton("Cʜᴀɴɴᴇʟ", url=f"https://t.me/{UPDATES_CHANNEL}"),
+                InlineKeyboardButton('SUPPORT", url=f"https://teamladz_bothub"),
+                InlineKeyboardButton("CHANNEL", url=f"https://t.me/team_lad"),
             ],
             [
-                InlineKeyboardButton("Aʙᴏᴜᴛ", callback_data="about"),
-                InlineKeyboardButton("Dᴇᴠꜱ", callback_data="devs"),
+                InlineKeyboardButton("ADD ME TO YOUR GROUP", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")
             ],
             [
-               InlineKeyboardButton("Sᴜᴍᴍᴏɴ Mᴇ", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"),
+               InlineKeyboardButton("MY MASTER", url=f"https://t.me/CAT_OF_TG"),
             ]
             ]
         reply_markup = InlineKeyboardMarkup(buttons)
