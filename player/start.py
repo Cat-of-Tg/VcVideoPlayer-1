@@ -97,7 +97,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 InlineKeyboardButton("Hᴇʟᴘ & Cᴏᴍᴍᴀɴᴅꜱ", callback_data="help"),
             ],
             [
-                InlineKeyboardButton('SUPPORT", url=f"https://teamladz_bothub"),
+                InlineKeyboardButton("SUPPORT", url=f"https://teamladz_bothub"),
                 InlineKeyboardButton("CHANNEL", url=f"https://t.me/team_lad"),
             ],
             [
