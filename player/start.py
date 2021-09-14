@@ -8,7 +8,7 @@ from pyrogram.errors import MessageNotModified
 async def start(client, message):
    buttons = [
             [
-                InlineKeyboardButton('ADD ME TO UR GROUP", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"),
+                InlineKeyboardButton("ADD ME TO UR GROUP", url=f"https://t.me/EIRA_LADBOT?startgroup=true"),
             ],
             [
                 InlineKeyboardButton("UPSATES", url=f"https://t.me/Team_Lad"),
